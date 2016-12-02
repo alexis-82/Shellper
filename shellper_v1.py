@@ -5,7 +5,6 @@ import subprocess
 import random
 import sys
 version = str("1.0 - build: 01 dec 2016")
-os.system("sudo echo sudo acquired")
 os.system("clear")
 #WIFI
 def SECURE(command):
