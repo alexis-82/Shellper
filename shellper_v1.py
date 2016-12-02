@@ -31,12 +31,12 @@ def NETWORK_wifi():
 def NETWORK():
  netw_choice = raw_input("Activate network(1), disable it(2) or next step(3)?: ")
  if netw_choice == "1":
-  #os.system("ifconfig wlan0 up")
+  #radio on
   os.system("nmcli radio wifi on")
   print("Network is now working")
   NETWORK_wifi()
  elif netw_choice == "2":
-  #os.system("ifconfig wlan0 down")
+  #radio off
   os.system("nmcli radio wifi off")
   print("Network is now off")
  elif netw_choice == "3":
@@ -82,26 +82,6 @@ def UNIN():
      input_choice_unin_prog_un = raw_input("Type the packets you want to unistall: ")
      os.system("sudo apt-get remove"+ " "+ input_choice_unin_prog_un)
 
-#killmepls
-def SELFDESTR():
-    print("""Apparently, you're hunted by policemen, or you hate your datas. Anyway, here's what you can do:
-    1) Format the /home folder
-    2) Format the /root folder
-    3) Format both of them
-    4) Format all connected drives in ext3 format
-    5) Make all your datas disappear in a BlackHole """)
-    self_destr_choice = raw_input("1, 2, 3, 4, 5, or EXIT?")
-    if self_destr_choice == "1":
-    	SECURE(os.system("sudo rm -rf /home/$USER"))
-    if self_destr_choice == "2":
-    	SECURE(os.system("sudo rm -rf /"))
-    if self_destr_choice == "3":
-    	SECURE(os.system("sudo rm -rf /; sudo rm -rf /home/$USER"))
-    if self_destr_choice == "4":
-    	SECURE(os.system("sudo mkfs.ext3 /dev/sda"))
-    if self_destr_choice == "5":
-    	print("Sending your files in another dimension with CHASE...")
-    	SECURE(os.system("mv folder /dev/null"))
 
 #CREDIT
 def CREDITS():
