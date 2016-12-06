@@ -119,7 +119,7 @@ def menu_loop():
 
 def menu_main():
 	global user_input
-	menu_choice = int(raw_input("Tell me sir: "))
+	menu_choice = int(raw_input("Tell me, Sir: "))
 	user_input = menu_choice
 	menu_loop()
 	if user_input == 1:
