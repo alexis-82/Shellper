@@ -51,4 +51,4 @@ shortcut_creation()
 
 sleep(2)
 
-print("Now, to activate the program, just type: shelp")
+print("Now, to activate the program, close the terminal, re-open it, then type: shelp. Hope you'll enjoy it!")
