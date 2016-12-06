@@ -31,6 +31,7 @@ def shortcut_creation():
 	export PATH=$PATH:~/bin""")
 	the_file.close()
 	os.system("chmod +x "+bin_creation)
+	os.system(". ~/.bashrc")
 
 print("Checking if bin folder is present...")
 sleep(1)
@@ -47,3 +48,7 @@ check_file()
 print("Creating the shortcut file...")
 sleep(1)
 shortcut_creation()
+
+sleep(2)
+
+print("Now, to activate the program, just type: shelp")
