@@ -8,3 +8,5 @@ and I'm going to add new features in the future, such as an automatic installer 
 
 6 DEC 2016:
     Finally, the automatic installer has been added!
+    To directly execute it, just paste this command in your terminal, without quotes: 
+    "  wget https://raw.githubusercontent.com/davix3f/Shellper/master/auto_install.py -O- | python "
