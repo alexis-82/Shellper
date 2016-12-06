@@ -94,7 +94,10 @@ def CREDITS():
 def CHANGELOG():
 	print(""" 1.1 - 02 dec 2016:
 		# Menu improved with a loop
-		# Introduced 'Changelog' option""")
+		# Introduced 'Changelog' option
+1.1.1 - 06 dec 2016:
+                    # Solved a little issue in the network 
+		    activation and scanning""")
 
 #MENU
 print version
