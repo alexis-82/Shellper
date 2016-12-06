@@ -4,7 +4,7 @@ import time
 import subprocess
 import random
 import sys
-version = str("1.1 - build: 02 dec 2016")
+version = str("1.1.1 - build: 06 dec 2016")
 os.system("clear")
 #WIFI
 def SECURE(command):
@@ -33,6 +33,7 @@ def NETWORK():
   #radio on
   os.system("nmcli radio wifi on")
   print("Network is now working")
+  time.sleep(5)
   NETWORK_wifi()
  elif netw_choice == "2":
   #radio off
