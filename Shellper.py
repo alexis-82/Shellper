@@ -60,9 +60,9 @@ def MOUNT():
 			mount_proc.terminate()
 		MOUNT_active()
 	if os.path.isdir(mount_folder) == False:
-	   os.system ("mkdir /home/$USER"+mount_name)
+	   os.system ("mkdir "+mount_folder)
 	   def MOUNT_active_2():
-		    mounter_2 = str("sudo mount /dev"+ mount_name + " " + "/home/$USER" + mount_name)
+		    mounter_2 = str("sudo mount /dev/"+ mount_name + " " + mount_folder)
 		    mount_proc_2 = subprocess.Popen(mounter_2, shell=True)
 		    time.sleep(1)
 		    mount_proc_2.terminate()
@@ -97,7 +97,8 @@ def CHANGELOG():
 		# Introduced 'Changelog' option
 1.1.1 - 06 dec 2016:
                     # Solved a little issue in the network 
-		    activation and scanning""")
+		    activation and scanning
+		    # Fixed an error in the mounting function """)
 
 #MENU
 print version
